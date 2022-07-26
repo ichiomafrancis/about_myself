@@ -4,71 +4,84 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Simple-site</title>
   </head>
+
   <body>
-    <div>
-      <h1><em>Hey, I'm Francis.</em></h1>
-      <p>a programmer</p>
-      <img
-        src="https://cdn-icons-png.flaticon.com/128/163/163824.png
+    <div class="container">
+      <div class="header">
+        <div class="main-header">
+          <h1 class="header-title"><em>Hey, I'm Francis.</em></h1>
+          <p>a programmer</p>
+        </div>
+
+        <div class="about-section">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/163/163824.png
       "
-      />
-    </div>
-
-    <div>
-      <h2>About Me.</h2>
-      <p>
-        Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non
-        auctor, montes nulla distinctio.
-      </p>
-    </div>
-    <hr />
-
-    <div>
-      <h2>My Skills.</h2>
-      <div>
-        <img
-          src="https://t3.ftcdn.net/jpg/01/26/54/02/240_F_126540270_0WEQ6I41O25ILJnF66t7M1vnAVsNAZo0.jpg"
-          alt=""
-        />
-        <h3>Programming</h3>
-        <p>
-          Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
-          Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam,
-          lectus ante, ut lorem eros.
-        </p>
+          />
+          <div class="about-me">
+            <h2 class="header-about">About Me.</h2>
+            <p>
+              Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor
+              urna. Non auctor, montes nulla distinctio.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor
+              urna. Non auctor, montes nulla distinctio.
+            </p>
+          </div>
+        </div>
       </div>
-      <div>
-        <img
-          src="https://cdn-icons-png.flaticon.com/128/1753/1753751.png"
-          alt=""
-        />
-        <h3>Front-end Development</h3>
-        <p>
-          Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu,
-          bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu,
-          rutrum nam.
-        </p>
+      <hr />
+
+      <div class="my-skills">
+        <h2>My Skills.</h2>
+        <div>
+          <img
+            src="https://t3.ftcdn.net/jpg/01/26/54/02/240_F_126540270_0WEQ6I41O25ILJnF66t7M1vnAVsNAZo0.jpg"
+            alt=""
+          />
+          <h3>Programming</h3>
+          <p>
+            Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+            Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit
+            nam, lectus ante, ut lorem eros.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/1753/1753751.png"
+            alt=""
+          />
+          <h3>Front-end Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu,
+            bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel
+            eu, rutrum nam.
+          </p>
+        </div>
       </div>
-    </div>
-    <hr />
-    <div>
-      <h2>Services</h2>
-      <p>Here is a list of what services I can offer you</p>
-      <ul>
-        <li>Web Development</li>
-        <li>Programming</li>
-        <li>Product Design</li>
-      </ul>
-    </div>
-    <hr />
+      <hr />
+      <div class="services">
+        <h2 class="services-header">Services</h2>
+        <p class="services-p">
+          Here is a list of what services I can offer you:
+        </p>
+        <ul>
+          <li>Web Development</li>
+          <li>Programming</li>
+          <li>Product Design</li>
+        </ul>
+      </div>
+      <hr />
 
-    <h2>Would you like to do business with me?</h2>
-    <h3>Get in touch.</h3>
+      <h2>Would you like to do business with me?</h2>
+      <h3>Get in touch.</h3>
 
-    <fieldset>
-      <legend>User personal information</legend>
+      <!-- <fieldset> -->
+      <!-- <legend>User personal information</legend> -->
       <form>
         <div>
           <label for="name">Enter your full name</label><br />
@@ -81,19 +94,22 @@
         </div>
         <br />
 
-        <div>
-          <label for="gender">Enter your gender</label><br />
-          <input type="radio" name="gender" value="Male" />Male<br />
-          <input type="radio" name="gender" value="Female" />Female<br />
-          <input type="radio" name="gender" value="others" />others
-        </div>
+        <div class="gender-hobby">
+          <div>
+            <label for="gender">Enter your gender</label><br />
+            <input type="radio" name="gender" value="Male" />Male<br />
+            <input type="radio" name="gender" value="Female" />Female<br />
+            <input type="radio" name="gender" value="others" />others
+          </div>
 
-        <div>
-          <label for="hobby">Hobby:</label><br />
-          <input type="checkbox" name="hobby" value="Cricket" />Cricket <br />
-          <input type="checkbox" name="hobby" value="Football" />Football
-          <br />
-          <input type="checkbox" name="hobby" value="Hockey" />Hockey
+          <div>
+            <label for="hobby">Hobbies:</label><br />
+            <input type="checkbox" name="hobby" value="Cricket" />Cricket
+            <br />
+            <input type="checkbox" name="hobby" value="Football" />Football
+            <br />
+            <input type="checkbox" name="hobby" value="Hockey" />Hockey
+          </div>
         </div>
 
         <div>
@@ -103,16 +119,16 @@
 
         <button>Submit</button>
       </form>
-    </fieldset>
+      <!-- </fieldset> -->
 
-    <nav>
-      <a href="#">LinkedIn</a>
-      <a href="#">Twitter</a>
-    </nav>
-    <br />
+      <div class="footnote">
+        <nav>
+          <a href="www.linkedin.com">LinkedIn</a>
+          <a href="www.twitter.com">Twitter</a>
+        </nav>
 
-    <div>
-      <footer>&copy; 2018 Name Surname.</footer>
+        <footer>&copy; 2018 Name Surname.</footer>
+      </div>
     </div>
   </body>
 </html>

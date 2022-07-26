@@ -1,1 +1,1 @@
-This is my HTML assignment 5. simple-portfolioproject.netlify.app
+This is my HTML assignment about myself

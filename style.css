@@ -1,2 +1,110 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+/* General */
+.container {
+  /* width: 1200px;
+  margin: 0 auto; */
+
+  line-height: 1.5;
+}
+
+h1,
+.header-about {
+  color: #fff;
+}
+
+h1 {
+  font-family: cursive;
+  font-size: 5em;
+}
+
+h2,
+h3 {
+  font-family: sans-serif;
+}
+
+h2 {
+  color: #66bfbf;
+  font-size: 1.8em;
+}
+
+h3 {
+  color: #11999e;
+  margin-top: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+/* Introduction */
+.header {
+  background-color: #66bfbf;
+  height: 450;
+  padding: 50px 0;
+}
+
+.main-header {
+  margin-bottom: 70px;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: space-between; */
+}
+
+.about-me {
+  text-align: center;
+}
+
+/* My Sills */
+.my-skills {
+  padding: 30px 0;
+}
+/* Services */
+.services {
+  background-color: #acdbdb;
+  text-align: center;
+  padding: 50px 0;
+}
+
+ul {
+  list-style: none;
+}
+/* Get in Touch */
+.gender-hobby {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+fieldset,
+form {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #11999e;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0 50px 0;
+}
+
+/* Footnote */
+.footnote {
+  background-color: #11999e;
+  padding: 20px;
+}
+
+footer {
+  margin-top: 10px;
 }
